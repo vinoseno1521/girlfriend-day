@@ -1425,3 +1425,61 @@ to {
         font-size: clamp(1.25rem, 6vw, 1.8rem);
     }
 }
+/* Keep every section inside the mobile background */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main,
+#welcome,
+#message,
+#chapterTwo,
+#reasonsSection,
+#memoriesSection,
+#finalSection {
+    width: 100%;
+    max-width: 100%;
+}
+
+.love-letter,
+.chapter-card,
+.reasons-card,
+.memories-card,
+.final-card {
+    box-sizing: border-box;
+    max-width: calc(100vw - 24px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 600px) {
+
+    main {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .love-letter,
+    .chapter-card,
+    .reasons-card,
+    .memories-card,
+    .final-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .love-letter,
+    .chapter-card,
+    .reasons-card {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+}
