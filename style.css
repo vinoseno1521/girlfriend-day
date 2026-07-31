@@ -918,7 +918,7 @@ to {
 
 .final-signature {
     color: #a42d68;
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
     line-height: 1.7;
 
     opacity: 0;
@@ -928,12 +928,17 @@ to {
     display: inline-block;
     margin-top: 8px;
 
-    font-size: 2rem;
+    font-size: clamp(1.3rem, 5vw, 2rem);
     font-style: italic;
     font-weight: 600;
 
     color: #a42d68;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+
+    text-align: center;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .made-with-love {
@@ -1312,4 +1317,12 @@ to {
     #finalSectionButton {
         margin-bottom: 20px;
     }
+}
+.final-card {
+    width: 90vw;
+    padding: 30px 20px;
+}
+
+.final-title {
+    font-size: clamp(2rem, 10vw, 3.2rem);
 }
