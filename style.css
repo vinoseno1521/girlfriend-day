@@ -1318,11 +1318,110 @@ to {
         margin-bottom: 20px;
     }
 }
+/* =========================
+   Final responsive corrections
+========================= */
+
+#finalSection {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
 .final-card {
-    width: 90vw;
-    padding: 30px 20px;
+    position: relative;
+    z-index: 3;
+
+    width: min(620px, 90vw);
+    max-width: 620px;
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 40px 24px;
+
+    max-height: 82vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.95),
+            rgba(248, 242, 255, 0.95)
+        );
+
+    border: 1px solid rgba(203, 166, 255, 0.4);
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 70px rgba(95, 66, 115, 0.2),
+        inset 0 0 45px rgba(255, 255, 255, 0.9);
+
+    text-align: center;
+    animation: finalAppear 1.4s ease forwards;
+}
+
+.final-card * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.final-line,
+.final-signature,
+.made-with-love {
+    overflow-wrap: anywhere;
+    word-break: normal;
 }
 
 .final-title {
-    font-size: clamp(2rem, 10vw, 3.2rem);
+    font-size: clamp(2rem, 8vw, 3.6rem);
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+}
+
+.signature-name {
+    display: block;
+    width: 100%;
+
+    font-size: clamp(1.25rem, 5vw, 2rem);
+    line-height: 1.35;
+    text-align: center;
+
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+@media (max-width: 600px) {
+
+    #finalSection {
+        width: 100%;
+        padding: 20px 12px 50px;
+    }
+
+    .final-card {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto;
+        padding: 30px 18px;
+
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .final-line {
+        font-size: 1.05rem;
+        line-height: 1.65;
+    }
+
+    .final-title {
+        font-size: clamp(2rem, 9vw, 2.8rem);
+    }
+
+    .final-signature {
+        font-size: clamp(1.1rem, 5vw, 1.4rem);
+    }
+
+    .signature-name {
+        font-size: clamp(1.25rem, 6vw, 1.8rem);
+    }
 }
