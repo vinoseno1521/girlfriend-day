@@ -1,0 +1,1248 @@
+body {
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #fde4ec,
+        #e3f2fd,
+        #ede7f6
+    );
+
+
+    font-family: Georgia, serif;
+
+
+    height: 100vh;
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    overflow: hidden;
+
+}
+
+
+
+main {
+
+    text-align: center;
+
+    z-index: 5;
+
+}
+
+
+
+h1 {
+
+    color: #d81b60;
+
+    font-size: 3rem;
+
+    text-shadow:
+    0px 0px 15px rgba(255,255,255,0.8);
+
+}
+
+
+
+p {
+
+    font-size: 1.3rem;
+
+    color: #555;
+
+}
+
+
+
+button {
+
+    margin-top:30px;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff8fb1,
+        #c084fc
+    );
+
+
+    color:white;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+
+    box-shadow:
+    0 0 20px rgba(255,150,200,0.6);
+
+
+    animation:pulse 2s infinite;
+
+
+    transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    box-shadow 0.3s ease;
+
+}
+
+
+
+button:hover {
+
+    transform:scale(1.1);
+
+    box-shadow:
+    0 0 35px rgba(255,150,200,0.9);
+
+}
+button.button-pressed {
+    transform: scale(0.92);
+    opacity: 0.75;
+}
+
+
+
+/* MESSAGE */
+
+.hidden {
+
+    display:none;
+
+}
+
+
+
+#message {
+
+    margin-top:40px;
+
+    animation:fade 2s;
+
+}
+
+
+
+#typingText {
+
+    color:#d81b60;
+
+    font-size:1.1rem;
+
+    line-height:1.6;
+
+    white-space:pre-line;
+
+    text-align:left;
+
+}
+
+
+
+/* FLOWERS */
+
+
+.flower {
+
+    position: absolute;
+
+    width: 90px;
+
+    opacity: 0.7;
+
+    z-index: 2;
+
+    animation: float 8s infinite ease-in-out;
+
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));
+
+}
+
+
+
+/* Corner Roses */
+
+.rose {
+
+    width:120px;
+
+    z-index:2;
+
+}
+
+
+.top-left {
+
+    top:20px;
+    left:20px;
+
+}
+
+
+.top-right {
+
+    top:20px;
+    right:20px;
+
+}
+
+
+.bottom-left {
+
+    bottom:20px;
+    left:20px;
+
+}
+
+
+.bottom-right {
+
+    bottom:20px;
+    right:20px;
+
+}
+
+
+
+/* Lotus positions */
+
+.flower1 {
+
+    top:15%;
+    left:18%;
+
+}
+
+
+.flower2 {
+
+    top:35%;
+    left:8%;
+
+}
+
+
+.flower3 {
+
+    bottom:25%;
+    left:18%;
+
+}
+
+
+.flower4 {
+
+    bottom:10%;
+    right:25%;
+
+}
+
+
+
+/* Blue Lily */
+
+.flower5 {
+
+    top:12%;
+    right:25%;
+
+}
+
+
+.flower6 {
+
+    top:40%;
+    right:10%;
+
+}
+
+
+.flower7 {
+
+    bottom:20%;
+    right:18%;
+
+}
+
+
+.flower8 {
+
+    bottom:40%;
+    left:35%;
+
+}
+
+
+
+/* Purple */
+
+.flower9 {
+
+    top:25%;
+    left:40%;
+
+}
+
+
+.flower10 {
+
+    top:60%;
+    left:12%;
+
+}
+
+
+.flower11 {
+
+    top:70%;
+    right:35%;
+
+}
+
+
+.flower12 {
+
+    bottom:15%;
+    left:45%;
+
+}
+
+
+
+/* Pink */
+
+.flower13 {
+
+    top:18%;
+    left:55%;
+
+}
+
+
+.flower14 {
+
+    top:50%;
+    left:20%;
+
+}
+
+
+.flower15 {
+
+    bottom:35%;
+    right:30%;
+
+}
+
+
+.flower16 {
+
+    top:75%;
+    right:10%;
+
+}
+
+
+
+/* Extra flowers */
+
+.flower17 {
+
+    top:8%;
+    left:35%;
+
+}
+
+
+.flower18 {
+
+    bottom:8%;
+    left:30%;
+
+}
+
+
+.flower19 {
+
+    top:45%;
+    right:35%;
+
+}
+
+
+.flower20 {
+
+    bottom:50%;
+    left:5%;
+
+}
+
+
+.flower21 {
+
+    top:85%;
+    left:55%;
+
+}
+
+
+.flower22 {
+
+    top:30%;
+    right:45%;
+
+}
+main {
+
+    position:relative;
+
+    z-index:10;
+
+}
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0px) rotate(0deg);
+
+    }
+
+
+    50% {
+
+        transform: translateY(-25px) rotate(8deg);
+
+    }
+
+
+    100% {
+
+        transform: translateY(0px) rotate(0deg);
+
+    }
+
+}
+.flower:nth-of-type(2n) {
+
+    animation-duration: 10s;
+
+}
+
+
+.flower:nth-of-type(3n) {
+
+    animation-duration: 7s;
+
+}
+
+
+.flower:nth-of-type(5n) {
+
+    animation-delay: 2s;
+
+}
+/* Welcome Screen */
+
+
+#welcome {
+
+    animation: appear 2s ease;
+
+}
+
+
+
+#welcome h1 {
+
+    font-size:5rem;
+
+}
+
+
+
+#welcome h2 {
+
+    color:#b83280;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+#welcome p {
+
+    color:#555;
+
+    font-size:1.3rem;
+
+    line-height:1.8;
+
+}
+
+
+
+#message {
+
+    animation: fadeIn 2s ease;
+
+}
+
+
+
+/* Button glow */
+
+
+button {
+
+    box-shadow:
+    0 0 20px rgba(255,150,200,0.5);
+
+}
+
+
+
+/* Entrance animation */
+
+
+@keyframes appear {
+
+
+from {
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+}
+
+
+to {
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+/* Floating love letter */
+
+.love-letter {
+    width: min(540px, 85vw);
+    min-height: 360px;
+
+    padding: 45px 40px;
+
+    background:
+        linear-gradient(
+            rgba(255, 253, 248, 0.95),
+            rgba(255, 250, 252, 0.95)
+        );
+
+    border: 1px solid rgba(255, 182, 193, 0.45);
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 60px rgba(112, 79, 110, 0.18),
+        inset 0 0 35px rgba(255, 255, 255, 0.8);
+
+    position: relative;
+
+    opacity: 0;
+    transform: translateY(80px) scale(0.95);
+
+    animation: letterRise 1.5s ease forwards;
+}
+
+.letter-decoration {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+    animation: gentleFloat 3s ease-in-out infinite;
+}
+
+#typingText {
+    color: #a12f67;
+
+    font-size: 1.25rem;
+    line-height: 1.8;
+
+    white-space: pre-line;
+    text-align: left;
+
+    margin: 0;
+}
+
+#continueButton {
+    margin-top: 30px;
+}
+
+@keyframes letterRise {
+    from {
+        opacity: 0;
+        transform: translateY(80px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes gentleFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+/* Chapter cards */
+
+.chapter-card {
+    width: min(540px, 85vw);
+    padding: 45px 40px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid rgba(197, 157, 255, 0.35);
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 60px rgba(112, 79, 110, 0.18),
+        inset 0 0 35px rgba(255, 255, 255, 0.8);
+
+    animation: chapterAppear 1.2s ease forwards;
+}
+
+.chapter-card h2 {
+    color: #a12f67;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.chapter-card p {
+    color: #555;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.chapter-flower {
+    font-size: 3rem;
+    margin-bottom: 15px;
+
+    animation: gentleFloat 3s ease-in-out infinite;
+}
+
+@keyframes chapterAppear {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+/* Reasons section */
+
+.reasons-card {
+    width: min(540px, 85vw);
+    min-height: 360px;
+
+    padding: 45px 40px;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.94),
+            rgba(252, 244, 255, 0.94)
+        );
+
+    border: 1px solid rgba(190, 150, 255, 0.35);
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 60px rgba(112, 79, 110, 0.18),
+        inset 0 0 35px rgba(255, 255, 255, 0.8);
+
+    animation: chapterAppear 1.2s ease forwards;
+}
+
+.reasons-card h2 {
+    color: #9c2f68;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.reasons-flower {
+    font-size: 3rem;
+    margin-bottom: 15px;
+
+    animation: gentleFloat 3s ease-in-out infinite;
+}
+
+#reasonText {
+    min-height: 110px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #555;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    text-align: center;
+
+    padding: 15px;
+
+    opacity: 1;
+    transition:
+        opacity 0.35s ease,
+        transform 0.35s ease;
+}
+
+#reasonText.changing {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+#reasonCounter {
+    margin: 10px 0 20px;
+
+    color: #a56c91;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+/* Memories section */
+
+.memories-card {
+    width: min(580px, 88vw);
+     padding: 18px 28px;
+    
+
+    background: rgba(255, 255, 255, 0.94);
+
+    border: 1px solid rgba(173, 154, 255, 0.35);
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 60px rgba(112, 79, 110, 0.18),
+        inset 0 0 35px rgba(255, 255, 255, 0.8);
+
+    animation: chapterAppear 1.2s ease forwards;
+}
+
+.memories-card h2 {
+    color: #9c2f68;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.memories-flower {
+    font-size: 3rem;
+    margin-bottom: 4px;
+
+    animation: gentleFloat 3s ease-in-out infinite;
+}
+
+.photo-frame {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 4 / 5;
+
+    margin: 8px auto;
+
+    overflow: hidden;
+    border: 8px solid white;
+    border-radius: 18px;
+
+    box-shadow: 0 12px 30px rgba(80, 55, 90, 0.18);
+    background: #f8f4f8;
+}
+
+#memoryImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+}
+#memoryImage.changing {
+    opacity: 0;
+    transform: scale(0.96);
+}
+
+#memoryCaption {
+    min-height: 58px;
+
+    margin: 8px 0 4px;
+
+    color: #5f5260;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.memory-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    margin-top: 8px;
+}
+
+.memory-controls button {
+    margin-top: 0;
+    padding: 11px 18px;
+}
+
+#memoryCounter {
+    min-width: 55px;
+    color: #956a8b;
+    font-size: 0.95rem;
+}
+
+#finalSectionButton {
+    margin-top:  8px;
+}
+/* Final chapter */
+
+#finalSection {
+    position: relative;
+}
+
+.final-card {
+    width: min(620px, 88vw);
+
+    max-height: 82vh;
+    overflow-y: auto;
+
+    padding: 40px 42px;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.95),
+            rgba(248, 242, 255, 0.95)
+        );
+
+    border: 1px solid rgba(203, 166, 255, 0.4);
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 70px rgba(95, 66, 115, 0.2),
+        inset 0 0 45px rgba(255, 255, 255, 0.9);
+
+    text-align: center;
+
+    animation: finalAppear 1.4s ease forwards;
+}
+
+.final-sparkle {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+    animation: gentleFloat 3s ease-in-out infinite;
+}
+
+.final-line {
+    color: #5e5360;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin: 18px 0;
+
+    opacity: 0;
+    transform: translateY(18px);
+
+    animation: finalLineReveal 1s ease forwards;
+}
+
+.final-line:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.final-line:nth-of-type(2) {
+    animation-delay: 1.6s;
+}
+
+.final-line:nth-of-type(3) {
+    animation-delay: 2.8s;
+}
+
+.final-title {
+    color: #a42d68;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    margin: 35px 0 20px;
+
+    opacity: 0;
+    transform: scale(0.92);
+
+    animation: finalTitleReveal 1.2s ease 4s forwards;
+}
+
+.final-signature {
+    color: #a42d68;
+    font-size: 1.5rem;
+    line-height: 1.7;
+
+    opacity: 0;
+    animation: finalLineReveal 1s ease 5.2s forwards;
+}
+.signature-name {
+    display: inline-block;
+    margin-top: 8px;
+
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+
+    color: #a42d68;
+    letter-spacing: 1px;
+}
+
+.made-with-love {
+    margin-top: 30px;
+
+    color: #9c7892;
+    font-size: 0.95rem;
+    font-style: italic;
+    letter-spacing: 0.5px;
+
+    opacity: 0;
+    animation: finalLineReveal 1s ease 6.2s forwards;
+}
+
+@keyframes finalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(55px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes finalLineReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes finalTitleReveal {
+    to {
+        opacity: 1;
+        transform: scale(1);
+        text-shadow:
+            0 0 18px rgba(255, 122, 190, 0.3);
+    }
+}
+/* Final page falling petals and sparkles */
+
+#finalSection {
+    position: relative;
+    overflow: hidden;
+}
+
+.final-effects {
+    position: fixed;
+    inset: 0;
+
+    pointer-events: none;
+    overflow: hidden;
+
+    z-index: 10;
+}
+
+.final-card {
+    position: relative;
+    z-index: 3;
+}
+
+.falling-petal {
+    position: absolute;
+    top: -60px;
+
+    font-size: 1.5rem;
+    opacity: 0;
+
+    animation-name: petalFall;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    z-index: 10;
+}
+
+.final-spark {
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.9),
+        0 0 16px rgba(220, 190, 255, 0.8);
+
+    animation: sparkleGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes petalFall {
+    0% {
+        transform:
+            translateX(0)
+            translateY(-60px)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.85;
+    }
+
+    25% {
+        transform:
+            translateX(25px)
+            translateY(25vh)
+            rotate(90deg);
+    }
+
+    50% {
+        transform:
+            translateX(-35px)
+            translateY(50vh)
+            rotate(180deg);
+    }
+
+    75% {
+        transform:
+            translateX(30px)
+            translateY(75vh)
+            rotate(270deg);
+    }
+
+    100% {
+        transform:
+            translateX(-20px)
+            translateY(110vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+@keyframes sparkleGlow {
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: scale(0.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.4);
+    }
+}
+/* =========================
+   Loading Screen
+========================= */
+
+#loadingScreen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ffffff,
+        #fdeff5,
+        #eef6ff
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    z-index:99999;
+
+    transition:
+    opacity 1.8s ease,
+    visibility 1.8s ease;
+}
+
+#loadingScreen.hide {
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+#loadingScreen.hide .loading-content {
+
+    opacity: 0;
+
+    transform: translateY(-40px);
+
+}
+
+.loading-content{
+
+    animation:
+        loadingAppear 1.2s ease;
+}
+
+.loading-heart{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    animation:
+        gentleFloat 3s ease-in-out infinite;
+}
+
+.loading-content h1{
+
+    color:#b13d73;
+
+    margin-bottom:15px;
+
+    font-size:2.8rem;
+}
+
+.loading-content p{
+
+    color:#666;
+
+    font-size:1.15rem;
+
+    margin-bottom:30px;
+}
+
+.loading-flowers{
+
+    font-size:2rem;
+
+    letter-spacing:14px;
+
+    animation:
+        gentleFloat 2.5s ease-in-out infinite;
+}
+
+@keyframes loadingAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+/* Loading lotus bloom */
+
+.loading-content {
+    animation: loadingAppear 1.2s ease;
+
+    transition:
+        transform 1.4s ease,
+        opacity 1.4s ease;
+}
+
+.loading-lotus {
+
+    display: block;
+
+    width: 230px;
+    max-width: 55vw;
+
+    margin: 15px auto 0;
+
+    opacity: 0;
+
+    transform: scale(0.2);
+
+    filter:
+        blur(4px)
+        drop-shadow(0 12px 22px rgba(120, 90, 130, 0.18));
+
+    transition:
+        transform 2s ease,
+        opacity 2s ease,
+        filter 2s ease;
+}
+
+#loadingScreen.bloom .loading-content {
+    transform: translateY(-18px);
+}
+
+#loadingScreen.bloom .loading-lotus {
+
+    width: 230px;
+
+    opacity: 1;
+
+    transform: scale(1) translateY(0);
+
+    filter:
+        blur(0px)
+        drop-shadow(0 18px 35px rgba(120, 90, 130, 0.22));
+
+}
